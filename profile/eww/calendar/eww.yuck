@@ -1,0 +1,10 @@
+(defwindow calendar
+    :monitor 0
+    :stacking "fg"
+	:geometry (geometry 
+        :anchor "bottom right" 
+        :width "25%"
+        :x "0.5%"
+        :y "0.5%"
+    )
+  (calendar :class "calendar"))

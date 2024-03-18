@@ -1,0 +1,10 @@
+(defwidget control-button []
+  (box
+    :class "widget"
+    (button	:class "icon"					
+      :onclick "eww open-many closer control-center --toggle" 
+      " 󰨙 󰋋 "
+      )
+  )
+)
+

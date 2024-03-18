@@ -1,0 +1,17 @@
+#! /usr/bin/env bash
+
+if [[ $1 == "off" ]]; then
+	poweroff
+fi
+
+if [[ $1 == "restart" ]]; then
+	shutdown -r now
+fi
+
+if [[ $1 == "hibernate" ]]; then
+	systemctl suspend
+fi
+
+if [[ $1 == "logout" ]]; then
+	loginctl kill-session $XDG_SESSION_ID
+fi

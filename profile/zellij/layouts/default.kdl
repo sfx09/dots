@@ -1,0 +1,19 @@
+layout {
+    default_tab_template {
+      pane size=1 borderless=true {
+        plugin location="file:/etc/profiles/per-user/home/bin/zjstatus.wasm" {
+            format_left  "#[fg=#DCD7BA,bold] {session} {tabs}"
+            tab_normal "#[bg=#DCD7BA,fg=#16161D] #[bg=#DCD7BA,fg=#16161D,bold]{name} #[bg=#16161D,fg=#DCD7BA]"
+            tab_active "#[bg=#76946A,fg=#16161D] #[bg=#76946A,fg=#16161D,bold]{name} #[bg=#16161D,fg=#76946A]"
+        }
+      }
+      children
+    }
+    tab name="dev" focus=true {
+        pane name="dev"
+    }
+    tab name="test" {
+        pane name="test"
+    }
+}
+

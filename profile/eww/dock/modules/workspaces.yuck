@@ -1,0 +1,13 @@
+(deflisten wmstate :initial '' "dock/scripts/hyprstate")
+
+(defwidget workspaces []
+    (box 
+      :class "workspaces"
+      :orientation "h"
+      :spacing 5
+      (box
+        (for tag in '${wmstate}'
+          (button
+            :class {tag.visible? "ws-button-used" : tag.busy? "ws-button-busy" : "ws-button-idle"}
+            :onclick "hyprctl dispatch workspace ${tag.id}"
+            {!tag.visible ?  "󰐽" : "󰝥"})))))

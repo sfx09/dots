@@ -1,0 +1,36 @@
+#! /usr/bin/env bash
+
+title() {
+    title=$(playerctl metadata --format "{{title}}")
+    [ -z "$title" ] && title="Play Something"
+    echo "$title"
+}
+
+artist() {
+	artist=$(playerctl metadata --format "{{artist}}")
+	[ -z "$artist" ] && artist="Artist"
+	echo "$artist"
+}
+
+cover() {
+	Cover=$(playerctl metadata mpris:artUrl)
+	echo "$Cover"
+}
+
+statusicon() {
+	icon="󰐊"
+	[ $(playerctl status) = "Playing" ] && icon="󰏤"
+	[ $(playerctl status) = "Paused" ] && icon="󰐊"
+	echo "$icon"
+}
+
+case $1 in
+next) playerctl next ;;
+previous) playerctl previous ;;
+toggle) playerctl play-pause ;;
+title) title ;;
+artist) artist ;;
+statusicon) statusicon ;;
+cover) cover ;;
+*) doc ;;
+esac

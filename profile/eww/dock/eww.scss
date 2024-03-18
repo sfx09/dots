@@ -1,0 +1,45 @@
+.dock {
+  background-color: $background;
+  border-radius: $radii;
+  padding: 2px;
+
+  .icon {
+    font-size: $icon4;
+    margin-left: 10px;
+    color: $blue;
+  }
+
+  .workspaces {
+    font-size: $icon2;
+    font-weight: bold;
+
+    .ws-button-idle {
+        color: $fade;
+        padding: 4px;
+    }
+
+    .ws-button-busy {
+        color: $foreground;
+    }
+
+    .ws-button-used {
+        color: $blue;
+    }
+  }
+
+  .clock {
+    font-weight: bold;
+    color: $white;
+    font-size: $text_size;
+
+    .minute {
+      margin-right: 15px;
+    }
+  }
+
+  .widget {
+    border-radius: $radii;
+    margin-right: 10px;
+  }
+
+}

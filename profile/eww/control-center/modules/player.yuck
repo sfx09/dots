@@ -1,0 +1,24 @@
+;; Music
+(defpoll music-art :interval "1s" "control-center/scripts/player cover")
+(defpoll music-title :interval "1s" "control-center/scripts/player title")
+(defpoll music-artist :interval "1s" "control-center/scripts/player artist")
+(defpoll music-toggle :interval "1s" "control-center/scripts/player statusicon")
+
+(defwidget player_grid [] 
+  (box 
+    :space-evenly false 
+    :class "player"
+
+    (box :class "player-art" :space-evenly false :orientation "v" :hexpand true :style "background-image: url(\"${music-art}\");"
+      (box :space-evenly false :orientation "v" 
+        (label :class "player-title" :text music-title :halign "start" :limit-width 25 :tooltip music-title)
+        (label :class "player-artist" :text music-artist :halign "start" :limit-width 25 :tooltip music-artist)
+      )
+    )
+    (box :class "player-controls" :space-evenly true :orientation "vertical"
+      (button :class "icon" :onclick "player previous" "󰒮")
+      (button :class "icon" :onclick "player toggle" "${music-toggle}")
+      (button :class "icon" :onclick "player next" "󰒭")
+    )
+  )  
+)

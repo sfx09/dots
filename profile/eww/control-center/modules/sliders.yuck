@@ -1,0 +1,28 @@
+(defpoll brightness :interval "2s" "brightnessctl -m | awk -F ',' '{print $4}' | tr -d %")
+(defpoll volume     :interval "2s" "pamixer --get-volume")
+
+(defwidget slider [icon value onchange] (box
+  :space-evenly false
+  :class "slider-box"
+  (label :halign "start" :class "icon" :text icon)
+  (eventbox
+    :hexpand true 
+    :halign "start"
+    :class "slider"
+    (scale :value value :onchange onchange))
+  ))
+
+
+(defwidget sliders_grid []
+  (box
+    :class "widget"
+    :orientation "vertical"
+    :space-evenly true 
+    (slider
+      :icon "󰃞 "
+      :value {brightness}
+      :onchange "brightnessctl set {}%")
+    (slider
+      :icon "󰕾 "
+      :value {volume}
+      :onchange "pamixer  --set-volume {}")))
