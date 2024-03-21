@@ -45,7 +45,7 @@ set.virtualedit = "onemore" -- With This option you can move the cursor one char
 
 -- Title Bar
 set.title = true -- Show current txt that you editing
-set.showtabline = 2 -- Always show file tabs
+set.showtabline = 0 -- Always show file tabs
 
 -- Debug Bar
 set.number = true -- Line numbers
@@ -53,7 +53,7 @@ set.relativenumber = true -- Vim’s absolute, relative and hybrid line numbers
 vim.cmd([[set signcolumn=yes]]) -- Show debug line
 
 -- Status Bar
-set.laststatus = 2 -- Always display the status line
+set.laststatus = 0 -- Always display the status line
 
 -- Window Allocation
 set.splitbelow = true -- Horizontal splits will automatically be below

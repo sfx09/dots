@@ -44,16 +44,4 @@ return {
 			},
 		},
 	},
-	{
-		"akinsho/bufferline.nvim",
-		version = "*",
-		dependencies = "nvim-tree/nvim-web-devicons",
-		opts = {
-			options = { view = { hide_root_folder = true } },
-		},
-	},
-	{
-		"nvim-lualine/lualine.nvim",
-		opts = {},
-	},
 }
