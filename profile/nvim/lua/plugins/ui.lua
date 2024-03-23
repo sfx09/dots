@@ -5,7 +5,6 @@ return {
 		priority = 1000,
 		opts = {
 			style = "dragon",
-			transparent = true,
 			colors = { theme = { all = { ui = { bg_gutter = "none" } } } },
 		},
 		init = function()
@@ -23,25 +22,12 @@ return {
 			vim.api.nvim_set_keymap("n", "<leader>cd", "<CMD>Noice dismiss<CR>", {})
 			vim.api.nvim_set_keymap("n", "<leader>ch", "<CMD>Noice history<CR>", {})
 		end,
-		opts = {
-			lsp = {
-				override = {
-					["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-					["vim.lsp.util.stylize_markdown"] = true,
-					["cmp.entry.get_documentation"] = true,
-				},
-			},
-			presets = {
-				command_palette = true,
-				long_message_to_split = true,
-				inc_rename = false,
-			},
-			routes = {
-				{
-					view = "notify",
-					filter = { event = "msg_showmode" },
-				},
-			},
-		},
+		opts = { presets = { command_palette = true } },
+	},
+	{
+		"akinsho/bufferline.nvim",
+		version = "*",
+		dependencies = "nvim-tree/nvim-web-devicons",
+		opts = {},
 	},
 }

@@ -25,11 +25,6 @@ keymap("v", ">", ">gv")
 -- Buffer
 keymap("n", "<leader>d", "<CMD>bd<CR>") -- Delete current buffer:
 
--- qfixlist
-keymap("n", "<leader>q", "<CMD>cclose<CR>")
-keymap("n", "[q", "<CMD>cprev<CR>")
-keymap("n", "]q", "<CMD>cnext<CR>")
-
 -- Diagnostics
 keymap("n", "[d", vim.diagnostic.goto_prev)
 keymap("n", "]d", vim.diagnostic.goto_next)

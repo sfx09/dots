@@ -53,7 +53,7 @@ set.relativenumber = true -- Vim’s absolute, relative and hybrid line numbers
 vim.cmd([[set signcolumn=yes]]) -- Show debug line
 
 -- Status Bar
-set.laststatus = 0 -- Always display the status line
+set.laststatus = 0 -- Don't display status line
 
 -- Window Allocation
 set.splitbelow = true -- Horizontal splits will automatically be below
@@ -71,4 +71,4 @@ set.termguicolors = true -- set term gui colors
 -----------------
 -- Memory, CPU --
 -----------------
-set.hidden = true -- Required to keep multiple buffers open multiple buffers
+set.hidden = true -- Required to keep multiple buffers open
