@@ -25,7 +25,6 @@
     ./hyprland.nix
     ./network.nix
     ./nix.nix
-    ./nvidia.nix
     ./shell.nix
     ./virt.nix
   ];
