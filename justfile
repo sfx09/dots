@@ -5,6 +5,7 @@ default:
 
 # Rebuild NixOS
 build:
+  just reset
   sudo nixos-rebuild switch --flake .
 
 # Update flake file
@@ -14,7 +15,7 @@ update:
 # Format files
 fmt:
   nix fmt
-  stylua profile/
+  stylua modules/
 
 # Remove obselete nix links
 clean:
