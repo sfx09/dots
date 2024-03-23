@@ -24,12 +24,12 @@ clean:
 # Symlink config directory for rapid iterations
 hack:
   just reset
-  ln -s ${PWD}/profile/alacritty ${HOME}/.config/alacritty
-  ln -s ${PWD}/profile/eww ${HOME}/.config/eww
-  ln -s ${PWD}/profile/dunst ${HOME}/.config/dunst
-  ln -s ${PWD}/profile/hypr ${HOME}/.config/hypr
-  ln -s ${PWD}/profile/nvim ${HOME}/.config/nvim
-  ln -s ${PWD}/profile/zellij ${HOME}/.config/zellij
+  ln -s ${PWD}/modules/alacritty ${HOME}/.config/alacritty
+  ln -s ${PWD}/modules/eww ${HOME}/.config/eww
+  ln -s ${PWD}/modules/dunst ${HOME}/.config/dunst
+  ln -s ${PWD}/modules/hypr ${HOME}/.config/hypr
+  ln -s ${PWD}/modules/nvim ${HOME}/.config/nvim
+  ln -s ${PWD}/modules/zellij ${HOME}/.config/zellij
 
 # Reset config directory to prepare for re-deployment
 reset:

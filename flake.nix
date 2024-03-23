@@ -5,7 +5,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager = { url = "github:nix-community/home-manager/master"; inputs.nixpkgs.follows = "nixpkgs"; };
     disko = { url = "github:nix-community/disko"; inputs.nixpkgs.follows = "nixpkgs"; };
-    zjstatus = { url = "github:dj95/zjstatus"; };
   };
 
   outputs = inputs@{ nixpkgs, home-manager, disko, ... }:
@@ -22,7 +21,7 @@
             home-manager.nixosModules.default
             disko.nixosModules.default
             ./host
-            ./profile
+            ./modules
           ];
         };
       };
