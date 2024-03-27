@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    bandwhich
     bat
     bottom
     choose
@@ -10,13 +11,16 @@
     fd
     fish
     fzf
+    hyperfine
     jq
     just
     procs
     ripgrep
+    rsync
     sd
     skim
     starship
+    tealdeer
     tokei
     watchexec
     zoxide
