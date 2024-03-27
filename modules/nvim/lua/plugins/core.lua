@@ -19,10 +19,21 @@ return {
 
 			local lspconfig = require("lspconfig")
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-			local servers = { "bashls", "ccls", "csharp_ls", "lua_ls", "gopls", "pyright", "tsserver", "templ", "zls" }
+			local servers = {
+				"bashls",
+				"clangd",
+				"csharp_ls",
+				"lua_ls",
+				"gopls",
+				"pyright",
+				"tsserver",
+				"templ",
+				"zls",
+			}
 			for _, server in pairs(servers) do
 				lspconfig[server].setup({ capabilities = capabilities })
 			end
+			vim.filetype.add({ extension = { templ = "templ" } })
 		end,
 	},
 	{

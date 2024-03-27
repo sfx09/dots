@@ -5,7 +5,7 @@
 
     # Language Servers
     nodePackages.bash-language-server
-    ccls
+    clang-tools_17
     csharp-ls
     gopls
     lua-language-server

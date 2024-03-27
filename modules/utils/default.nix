@@ -4,7 +4,7 @@
     bun
     cargo
     dotnet-sdk_8
-    gcc
+    clang_17
     go
     lua
     nodejs_20
