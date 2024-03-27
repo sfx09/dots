@@ -36,9 +36,8 @@ main() {
     # Check battery level initially
     check_battery_level
 
-    # Continuously monitor battery level every 5 minutes
     while true; do
-        sleep 300  # 5 minutes
+        sleep 600 
         check_battery_level
     done
 }
