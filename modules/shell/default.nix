@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   home.packages = with pkgs; [
     bandwhich
@@ -31,6 +31,12 @@
     BROWSER = "firefox";
     VISUAL = "nvim";
     PAGER = "bat";
+  };
+
+  xdg.userDirs = {
+    enable = true;
+    desktop = "${config.home.homeDirectory}";
+    download = "${config.home.homeDirectory}/downloads";
   };
 
   programs = {
