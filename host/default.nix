@@ -5,7 +5,6 @@
   # Host specific configuration
   networking.hostName = "lyra";
   time.timeZone = "Asia/Kolkata";
-  boot.extraModprobeConfig = '' options snd-hda-intel dmic_detect=0 '';
 
   # User configuration
   users.users."home" = {
