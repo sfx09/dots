@@ -1,6 +1,6 @@
 {
-  disko.devices.disk.sda = {
-    device = "/dev/sda";
+  disko.devices.disk.nvme0n1 = {
+    device = "/dev/nvme0n1";
     type = "disk";
     content = {
       type = "gpt";
