@@ -10,9 +10,9 @@
 )))
 
 (defwidget stat_bat [] (stat
-    :css "battery ${EWW_BATTERY.BAT1.capacity}"
-    :data {EWW_BATTERY.BAT1.capacity}
-    :tip "Battery ${EWW_BATTERY.BAT1.capacity}%"
+    :css "battery ${EWW_BATTERY.BAT0.capacity}"
+    :data {EWW_BATTERY.BAT0.capacity}
+    :tip "Battery ${EWW_BATTERY.BAT0.capacity}%"
     :icon {"󰁹"}))
 
 (defwidget stat_cpu [] (stat
