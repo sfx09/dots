@@ -23,11 +23,12 @@ return {
 				"bashls",
 				"clangd",
 				"csharp_ls",
-				"lua_ls",
 				"gopls",
+				"jdtls",
+				"lua_ls",
 				"pyright",
-				"tsserver",
 				"templ",
+				"tsserver",
 				"zls",
 			}
 			for _, server in pairs(servers) do
