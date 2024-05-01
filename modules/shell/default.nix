@@ -68,9 +68,5 @@
     starship.enable = true;
     zoxide.enable = true;
     man.generateCaches = false;
-    direnv = {
-      enable = true;
-      nix-direnv.enable = true;
-    }
   };
 }
