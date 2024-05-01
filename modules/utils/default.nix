@@ -9,6 +9,7 @@
     lua
     nodejs_20
     python3Minimal
+    uv
     zig
 
     keepassxc
