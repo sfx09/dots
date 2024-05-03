@@ -22,7 +22,13 @@ return {
 			vim.api.nvim_set_keymap("n", "<leader>cd", "<CMD>Noice dismiss<CR>", {})
 			vim.api.nvim_set_keymap("n", "<leader>ch", "<CMD>Noice history<CR>", {})
 		end,
-		opts = { presets = { command_palette = true } },
+		opts = {
+			presets = {
+				command_palette = true,
+				lsp_doc_border = true,
+				long_message_to_split = true,
+			},
+		},
 	},
 	{
 		"akinsho/bufferline.nvim",
