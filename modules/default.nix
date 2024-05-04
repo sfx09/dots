@@ -21,7 +21,6 @@
       ./shell
       ./tmux
       ./utils
-      ./zellij
     ];
   };
 }
