@@ -16,8 +16,12 @@ status is-interactive; and begin
     abbr --add -- vim nvim
     abbr --add -- tls 'tmux ls'
     abbr --add -- tks 'tmux kill-server'
+    abbr --add -- tr 'tmux rename-window'
     abbr --add -- ga 'git add'
-    abbr --add -- gc 'git commit -m'
+    abbr --add -- gc 'git commit'
+    abbr --add -- gd 'git diff'
+    abbr --add -- gs 'git status'
+    abbr --add -- gl 'git log --oneline'
 
     # Aliases
 

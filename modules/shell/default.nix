@@ -49,4 +49,8 @@
   home.file.".config/fish/conf.d/config.fish" = {
     source = ./config.fish; 
   };
+
+  home.file.".local/bin" = {
+    source = ./scripts;
+  };
 }

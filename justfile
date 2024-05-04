@@ -26,14 +26,14 @@ clean:
 hack:
   just reset
   ln -s ${PWD}/modules/alacritty ${HOME}/.config/alacritty
-  ln -s ${PWD}/modules/dunst ${HOME}/.config/dunst
-  ln -s ${PWD}/modules/eww ${HOME}/.config/eww
   ln -s ${PWD}/modules/hypr ${HOME}/.config/hypr
   ln -s ${PWD}/modules/nvim ${HOME}/.config/nvim
   ln -s ${PWD}/modules/tmux ${HOME}/.config/tmux
-  ln -s ${PWD}/modules/zellij ${HOME}/.config/zellij
-  ln -s ${PWD}/modules/shell ${HOME}/.config/fish/conf.d
+  ln -s ${PWD}/modules/shell/config ${HOME}/.config/fish/conf.d
+  ln -s ${PWD}/modules/shell/scripts ${HOME}/.local/bin
 
 # Reset config directory to prepare for re-deployment
 reset:
-  rm -rf ${HOME}/.config/{alacritty,dunst,eww,hypr,nvim,tmux,zellij,fish/conf.d}
+  rm -rf ${HOME}/.local/bin
+  rm -rf ${HOME}/.config/fish/conf.d
+  rm -rf ${HOME}/.config/{alacritty,dunst,eww,hypr,nvim,tmux}
