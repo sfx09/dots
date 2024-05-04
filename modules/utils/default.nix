@@ -15,8 +15,12 @@
     keepassxc
     zathura
 
-    zip
+    brightnessctl
+    jq
+    pamixer
+    socat
     unzip
+    zip
   ];
 
   services.syncthing.enable = true;
