@@ -46,8 +46,8 @@
     man.generateCaches = false;
   };
 
-  home.file.".config/fish/conf.d/config.fish" = {
-    source = ./config.fish; 
+  home.file.".config/fish/conf.d" = {
+    source = ./config; 
   };
 
   home.file.".local/bin" = {
