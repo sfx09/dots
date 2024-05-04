@@ -13,8 +13,6 @@
     programs.home-manager.enable = true;
     imports = [
       ./alacritty
-      ./dunst
-      ./eww
       ./firefox
       ./git
       ./gtk

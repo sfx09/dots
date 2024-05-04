@@ -1,4 +1,0 @@
-(defwidget power-button []
-  (button	:class "icon"					
-    :onclick "eww open-many closer power-menu --toggle" 
-    "   󱄅   "))
