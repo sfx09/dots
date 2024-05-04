@@ -21,6 +21,7 @@
       ./hypr
       ./nvim
       ./shell
+      ./tmux
       ./utils
       ./zellij
     ];
