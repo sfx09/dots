@@ -32,7 +32,8 @@ hack:
   ln -s ${PWD}/modules/nvim ${HOME}/.config/nvim
   ln -s ${PWD}/modules/tmux ${HOME}/.config/tmux
   ln -s ${PWD}/modules/zellij ${HOME}/.config/zellij
+  ln -s ${PWD}/modules/shell ${HOME}/.config/fish/conf.d
 
 # Reset config directory to prepare for re-deployment
 reset:
-  rm -rf ${HOME}/.config/{alacritty,dunst,eww,hypr,nvim,tmux,zellij}
+  rm -rf ${HOME}/.config/{alacritty,dunst,eww,hypr,nvim,tmux,zellij,fish/conf.d}
