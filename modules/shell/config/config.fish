@@ -22,6 +22,8 @@ status is-interactive; and begin
     abbr --add -- gd 'git diff'
     abbr --add -- gs 'git status'
     abbr --add -- gl 'git log --oneline'
+    abbr --add -- gp 'git push'
+    abbr --add -- gh 'git stash'
 
     # Aliases
 
