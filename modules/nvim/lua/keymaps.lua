@@ -16,9 +16,6 @@ keymap("n", "<C-l>", "<C-w>l")
 keymap("n", "<S-h>", "<CMD>bprevious<CR>")
 keymap("n", "<S-l>", "<CMD>bnext<CR>")
 
--- Misc
-keymap("n", "<Enter>", "o<ESC>") -- Add new line without exiting normal mode
-
 -- Indenting
 keymap("v", "<", "<gv")
 keymap("v", ">", ">gv")

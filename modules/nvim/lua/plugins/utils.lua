@@ -10,16 +10,7 @@ return {
 		opts = {},
 	},
 	{
-		"echasnovski/mini.ai",
-		event = "InsertEnter",
-		opts = { n_lines = 500 },
-	},
-	{
 		"numToStr/Comment.nvim",
-		opts = {},
-	},
-	{
-		"norcalli/nvim-colorizer.lua",
 		opts = {},
 	},
 	{ "tpope/vim-fugitive" },
