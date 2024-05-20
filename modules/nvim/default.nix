@@ -13,6 +13,9 @@
     nodePackages.typescript-language-server
     zls
 
+	# Debuggers
+	gdb
+
     # Formatters
     ruff
     nodePackages.prettier
