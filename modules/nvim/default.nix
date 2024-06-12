@@ -9,7 +9,7 @@
     csharp-ls
     gopls
     lua-language-server
-    nodePackages.pyright
+    pyright
     nodePackages.typescript-language-server
     zls
 
