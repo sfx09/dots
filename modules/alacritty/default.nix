@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
     alacritty
-	noto-fonts
+    noto-fonts
     source-code-pro
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];

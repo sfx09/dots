@@ -47,7 +47,7 @@
   };
 
   home.file.".config/fish/conf.d" = {
-    source = ./config; 
+    source = ./config;
   };
 
   home.file.".local/bin" = {

@@ -13,8 +13,8 @@
     nodePackages.typescript-language-server
     zls
 
-	# Debuggers
-	gdb
+    # Debuggers
+    gdb
 
     # Formatters
     ruff
