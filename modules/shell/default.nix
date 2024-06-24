@@ -23,6 +23,7 @@
     tealdeer
     tokei
     watchexec
+    xdg-utils
     zoxide
   ];
 
