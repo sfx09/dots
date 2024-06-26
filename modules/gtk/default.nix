@@ -1,18 +1,15 @@
-{ pkgs, config, ... }:
+{ pkgs, config, inputs, ... }:
 {
+
+  imports = [inputs.catppuccin.homeManagerModules.catppuccin];
   gtk = {
     enable = true;
-    theme = {
-      name = "Catppuccin-Mocha-Standard-Blue-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        accents = [ "blue" ];
-        variant = "mocha";
-      };
+    catppuccin = {
+      enable = true;
+      flavor = "mocha";
+      accent = "blue";
+      size = "standard";
+      tweaks = [ "normal" ];
     };
-    cursorTheme = {
-      name = "Catppuccin-Mocha-Dark-Cursors";
-      package = pkgs.catppuccin-cursors.mochaDark;
-    };
-    gtk2.configLocation = "${config.xdg.configHome}/gtk-2.0/gtkrc";
   };
 }
