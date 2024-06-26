@@ -35,4 +35,6 @@ status is-interactive; and begin
     bind -M insert \cn down-or-search
     set fish_greeting
 
+    fish_add_path ~/go/bin/
+
 end
