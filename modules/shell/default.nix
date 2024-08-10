@@ -42,7 +42,12 @@
 
   programs = {
     fish.enable = true;
-    starship.enable = true;
+    starship = {
+      enable = true;
+      settings = {
+        gcloud.disabled = true; 
+      };
+    };
     zoxide.enable = true;
     man.generateCaches = false;
   };
