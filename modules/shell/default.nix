@@ -24,6 +24,8 @@
     watchexec
     xdg-utils
     zoxide
+
+    jetbrains.idea-community
   ];
 
   home.sessionVariables = {
