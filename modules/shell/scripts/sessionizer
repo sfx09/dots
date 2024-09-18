@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-target_folder=$(fd . "$HOME" --min-depth 1 --max-depth 2 --hidden --type d | fzf)
+target_folder=$(fd . "$HOME" --min-depth 1 --max-depth 3 --hidden --type d | fzf)
 
 if [[ -z $target_folder ]]; then
   exit 0
