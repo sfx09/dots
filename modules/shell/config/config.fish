@@ -36,6 +36,8 @@ status is-interactive; and begin
     set fish_greeting
 
     set -x -U GOPATH ~/.cache/go
+    set -x -U _JAVA_OPTIONS -Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+    set -x -U GRADLE_USER_HOME "$XDG_DATA_HOME"/gradle
 
     fish_add_path ~/.cache/go/bin/
 

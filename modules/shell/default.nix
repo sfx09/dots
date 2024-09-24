@@ -38,7 +38,6 @@
   xdg.userDirs = {
     enable = true;
     desktop = "${config.home.homeDirectory}";
-    download = "${config.home.homeDirectory}/downloads";
   };
 
   programs = {

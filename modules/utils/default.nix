@@ -6,6 +6,8 @@
     dotnet-sdk_8
     clang_17
     go
+    gradle_7
+    jdk22
     lua
     nodejs_20
     python3Minimal
