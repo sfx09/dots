@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     bat
     bottom
+    brightnessctl
     choose
     du-dust
     eva
@@ -13,19 +14,21 @@
     hyperfine
     jq
     just
+    pamixer
     procs
     ripgrep
     rsync
     sd
     skim
+    socat
     starship
     tealdeer
     tokei
+    unzip
     watchexec
     xdg-utils
+    zip
     zoxide
-
-    jetbrains.idea-community
   ];
 
   home.sessionVariables = {
