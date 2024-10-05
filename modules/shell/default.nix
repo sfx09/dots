@@ -35,22 +35,17 @@
     EDITOR = "nvim";
     BROWSER = "firefox";
     VISUAL = "nvim";
-    PAGER = "bat";
   };
 
   xdg.userDirs = {
     enable = true;
     desktop = "${config.home.homeDirectory}";
+    download = "${config.home.homeDirectory}/downloads";
   };
 
   programs = {
     fish.enable = true;
-    starship = {
-      enable = true;
-      settings = {
-        gcloud.disabled = true; 
-      };
-    };
+    starship.enable = true;
     zoxide.enable = true;
     man.generateCaches = false;
   };
